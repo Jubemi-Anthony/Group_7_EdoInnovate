@@ -1,0 +1,25 @@
+{
+  "name": "group-7",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jubemi-Anthony/Group_7_EdoInnovates.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jubemi-Anthony/Group_7_EdoInnovates/issues"
+  },
+  "homepage": "https://github.com/Jubemi-Anthony/Group_7_EdoInnovates#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "path": "^0.12.7"
+  }
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Management</title>
+    <link rel="stylesheet" href="styless.css" />
+  </head>
+  <body>
+    <!--    Navigation Bar Begin    -->
+
+    <a id="blovk" href="index.html"><img class="logo" src="default-monochrome-black.svg" alt="logo"></a>
+  
+
+    <div class="container" id="container">
+      <div id="menu">
+        <div class="menu-item">
+          <ul>
+            <li class="item">Started</li>
+            <li class="item">Ongoing</li>
+            <li class="item">Pending</li>
+            <li class="item">Delayed</li>
+            <li class="item">Finished</li>
+            <li class="item">Cancelled</li>
+            <li>Log Out</li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="right-side">
+
+        <div id="taskHold" class="hidde">
+            <div id="showTask">
+                <!-- <div class="task">
+                    <h3>Title</h3>
+                    <div class="time">
+                        <label>Start</label>
+                        <p>12-10-1010</p>
+                    </div>
+                    <div class="time">
+                        <label>End</label>
+                        <p>12-10-1010</p>
+                    </div>
+                    <div class="ident">
+                        <label>Task ID:</label>
+                        <p>dmalam</p>
+                    </div>
+                </div> -->
+                <img src="./plus-circle.svg" alt="add" id="plus">
+            </div>
+        </div>
+
+        <div id="taskAdd" class="hidden">
+            <div class="add-task">
+                <div>
+                    <input class="title" type="text" placeholder="Title">
+                    <label class="error" id="titleError">Title cannot be blank!</label>
+                </div>
+                <div class="scoped">
+                    <input name="scope" class="scope" placeholder="Scope"></input>
+                    <label class="error" id="scopeError">Scope cannot be blank!</label>
+                </div>
+                <div class="datee">
+                    <div class="dates">
+                        <div class="dateDiv">
+                           <div class="dateHolder">
+                            <label for="startDate">START:</label>
+                            <input class="startDate" type="datetime-local">
+                           </div>
+                            <label class="error" id="startError">Input a valid date and time!</label>
+                        </div>
+                        <div class="dateDiv">
+                            <div class="dateHolder">
+                                <label for="endDate">END:</label>
+                                <input class="endDate" type="datetime-local">
+                               </div>
+                            <label class="error" id="endError">Input a valid date and time!</label>
+                        </div>
+                    </div>
+                    <div class="labels">
+                        <label id="precedeEnd" class="error">End date can not precede Start or Current date!</label>
+                        <label id="precedeStart" class="error">Start date can not precede Current date!</label>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button id="addTask">Add Task</button>
+                    <button id="cancel">Cancel</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="seeTask" class="hidden">
+            <div class="add-task">
+                <img src="./arrow-left-circle.svg" alt="back arrow" class="backk">
+                <div class="status-hold">
+                    <p class="status"></p>
+                </div>
+                <div>
+                    <input class="title" type="text" placeholder="Title" readonly>
+                    <label class="error" id="titleError2">Title cannot be blank!</label>
+                </div>
+                <div class="scoped">
+                    <input class="scope" placeholder="Scope" readonly></input>
+                    <label class="error" id="scopeError2">Scope cannot be blank!</label>
+                </div>
+                <div id="knowing">
+                    <div class="seeDates">
+                        <div>
+                            <label>Start</label>
+                            <p id="viewStart"></p>
+                        </div>
+                        <div>
+                            <label>End</label>
+                            <p id="viewEnd"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="created">
+                    <p>Created:</p>
+                    <p id="today"></p>
+                </div>
+                <div id="dates" class="hidden">
+                    <div class="dates">
+                        <div class="dateDiv">
+                           <div class="dateHolder">
+                            <label for="startDate">START:</label>
+                            <input class="startDate" type="datetime-local">
+                           </div>
+                            <label class="error" id="startError2">Input a valid date and time!</label>
+                        </div>
+                        <div class="dateDiv">
+                            <div class="dateHolder">
+                                <label for="endDate">END:</label>
+                                <input class="endDate" type="datetime-local">
+                               </div>
+                            <label class="error" id="endError2">Input a valid date and time!</label>
+                        </div>
+                    </div>
+                    <div class="labels">
+                        <label id="precedeEnd2" class="error">End date can not precede Start or Current date!</label>
+                        <label id="precedeStart2" class="error">Start date can not precede Current date!</label>
+                    </div>
+                </div>
+                <div>
+                    <label>Task ID:</label>
+                    <p id="taskID"></p>
+                </div>
+                <div class="buttons">
+                    <!-- <button id="editTask">Edit Task</button> -->
+                    <!-- <button id="cancel2">Cancel</button> -->
+                </div>
+                
+            </div>
+        </div>
+
+        <div id="categories" class="hidden">
+            <img src="./arrow-left-circle.svg" alt="back arrow" class="backk">
+            <div class="category"></div>
+        </div>
+
+      </div>
+    </div>
+  </body>
+  <script src="jem.js"></script>
+</html>
